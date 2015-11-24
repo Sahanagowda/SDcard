@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <fragment android:name="sbasappa_a5.cs442.com.NewItemFragment"
+    android:id="@+id/NewItemFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_weight="0.2"
+  />
+  <fragment android:name="sbasappa_a5.cs442.com.ToDoListFragment"
+    android:id="@+id/TodoListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_weight="8"
+  />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.5"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Export"
+        android:id="@+id/eButton"
+        android:width="100dp"
+        android:onClick="saveInfo"
+        android:layout_gravity="left|bottom"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Import"
+        android:width="100dp"
+        android:id="@+id/iButton"
+        android:onClick="loadInfo"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/rButton"
+
+        android:width="100dp"
+        android:onClick="resetInfo"
+        android:layout_gravity="right|bottom" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
+<!-- From: file:/Users/sahana/Desktop/Chapter_4_To-do_List_Part_4/app/src/main/res/layout/main.xml -->
